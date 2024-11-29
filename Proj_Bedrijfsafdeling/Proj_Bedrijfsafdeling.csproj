@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C680539-4EDD-4A40-8AD3-7141D060469A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proj_Bedrijfsafdeling</RootNamespace>
+    <AssemblyName>Proj_Bedrijfsafdeling</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Klasses_BedrAfd, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Klasses_Programma's\Klasses_BedrAfd\Klasses_BedrAfd\bin\Debug\Klasses_BedrAfd.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MijnForms\Afdelingen\AfdAanpassen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MijnForms\Afdelingen\AfdAanpassen.Designer.cs">
+      <DependentUpon>AfdAanpassen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MijnForms\Afdelingen\AfdToevoegen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MijnForms\Afdelingen\AfdToevoegen.Designer.cs">
+      <DependentUpon>AfdToevoegen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MijnForms\Afdelingen\AfdVerwijderen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MijnForms\Afdelingen\AfdVerwijderen.Designer.cs">
+      <DependentUpon>AfdVerwijderen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MijnForms\Afdelingen\RaadpleegAfdeling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MijnForms\Afdelingen\RaadpleegAfdeling.Designer.cs">
+      <DependentUpon>RaadpleegAfdeling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MijnForms\Keuzemenus\MenuBewerkAfd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MijnForms\Keuzemenus\MenuBewerkAfd.Designer.cs">
+      <DependentUpon>MenuBewerkAfd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MijnForms\Keuzemenus\MenuBewerken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MijnForms\Keuzemenus\MenuBewerken.Designer.cs">
+      <DependentUpon>MenuBewerken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MijnForms\Keuzemenus\MenuBewerkenMW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MijnForms\Keuzemenus\MenuBewerkenMW.Designer.cs">
+      <DependentUpon>MenuBewerkenMW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MijnForms\Keuzemenus\MenuRaadplegen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MijnForms\Keuzemenus\MenuRaadplegen.Designer.cs">
+      <DependentUpon>MenuRaadplegen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MijnForms\Keuzemenus\StartMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MijnForms\Keuzemenus\StartMenu.Designer.cs">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MijnForms\Medewerkers\MwAanpassen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MijnForms\Medewerkers\MwAanpassen.Designer.cs">
+      <DependentUpon>MwAanpassen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MijnForms\Medewerkers\MwToevoegen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MijnForms\Medewerkers\MwToevoegen.Designer.cs">
+      <DependentUpon>MwToevoegen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MijnForms\Medewerkers\MwVerwijderen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MijnForms\Medewerkers\MwVerwijderen.Designer.cs">
+      <DependentUpon>MwVerwijderen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MijnForms\Medewerkers\RaadpleegMedewerkers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MijnForms\Medewerkers\RaadpleegMedewerkers.Designer.cs">
+      <DependentUpon>RaadpleegMedewerkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MijnForms\Afdelingen\AfdAanpassen.resx">
+      <DependentUpon>AfdAanpassen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MijnForms\Afdelingen\AfdToevoegen.resx">
+      <DependentUpon>AfdToevoegen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MijnForms\Afdelingen\AfdVerwijderen.resx">
+      <DependentUpon>AfdVerwijderen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MijnForms\Afdelingen\RaadpleegAfdeling.resx">
+      <DependentUpon>RaadpleegAfdeling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MijnForms\Keuzemenus\MenuBewerkAfd.resx">
+      <DependentUpon>MenuBewerkAfd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MijnForms\Keuzemenus\MenuBewerken.resx">
+      <DependentUpon>MenuBewerken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MijnForms\Keuzemenus\MenuBewerkenMW.resx">
+      <DependentUpon>MenuBewerkenMW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MijnForms\Keuzemenus\MenuRaadplegen.resx">
+      <DependentUpon>MenuRaadplegen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MijnForms\Keuzemenus\StartMenu.resx">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MijnForms\Medewerkers\MwAanpassen.resx">
+      <DependentUpon>MwAanpassen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MijnForms\Medewerkers\MwToevoegen.resx">
+      <DependentUpon>MwToevoegen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MijnForms\Medewerkers\MwVerwijderen.resx">
+      <DependentUpon>MwVerwijderen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MijnForms\Medewerkers\RaadpleegMedewerkers.resx">
+      <DependentUpon>RaadpleegMedewerkers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
